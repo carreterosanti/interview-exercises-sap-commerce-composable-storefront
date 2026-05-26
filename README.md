@@ -4,12 +4,32 @@ This project is built on [SAP Commerce Composable Storefront (Spartacus)](https:
 
 All exercise code lives under `src/app/interview/`.
 
+## Prerequisites
+
+Make sure you have the following installed before running the project:
+
+| Tool        | Version |
+| ----------- | ------- |
+| Node.js     | >= 22.x |
+| npm         | >= 11.x |
+| Angular CLI | >= 21.x |
+
+Install Angular CLI globally if you don't have it:
+
+```bash
+npm install -g @angular/cli
+```
+
+## Installation
+
+> **Running `npm install` should not be necessary.** The project tracks `node_modules` in the repository to simplify distribution and ensure the environment works out of the box.
+
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+npm run start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
