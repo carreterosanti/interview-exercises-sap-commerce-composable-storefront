@@ -2,7 +2,34 @@
 
 This project is built on [SAP Commerce Composable Storefront (Spartacus)](https://sap.github.io/spartacus-docs/) and serves as a practical coding exercise environment for technical interviews. It connects to the public SAP Commerce Cloud electronics sample store and contains four intentional bugs or incomplete implementations that candidates are expected to identify and fix.
 
-All exercise code lives under `src/app/interview/`.
+All exercise code lives under `src/app/interview/` and based on the product details page for example: http://localhost:4200/electronics-spa/en/USD/product/553637/NV10.
+
+## Exercises
+
+### Exercise 1
+
+Exercise 1: Replace 'CONFIGURAR PRODUCTO' with a new i18n translation such as "interview.productSettings.label" = "CONFIGURACION DE PRODUCTO".
+
+Expected result: app-interview-custom-configure-product display CONFIGURACION DE PRODUCTO inside button.
+
+### Exercise 2
+
+Exercise 2: Display the product price and stock information inside the `app-interview-product-badge` component.
+
+Expected result: app-interview-product-badge displays the product's formatted price (e.g. "$100.00") and stock level below the product summary. If price or stock is unavailable, display a fallback message such as "No price" or "No stock".
+
+### Exercise 3
+
+Exercise 3: The custom "AGREGAR AL PEDIDO" button (`app-interview-custom-add-to-cart`) is mapped to the `ProductAddToCartComponent` CMS slot but the custom component is not visible. Identify and fix the issue.
+
+Expected result: app-interview-custom-add-to-cart button successfully replace the cx-add-to-cart in PDP.
+
+### Exercise 4
+
+Exercise 4: The `WishlistAddedEvent` is being dispatched when the wishlist button is clicked, but the event is not being registered in `window.dataLayer`.
+
+Expected result: When the wishlist button is clicked, `window.dataLayer` contains a new entry `WishlistAddedEvent {productCode: "300785814", productName: "Mock Product}`.
+Verify by opening the browser console and inspecting `window.dataLayer` after clicking the button.
 
 ## Prerequisites
 
