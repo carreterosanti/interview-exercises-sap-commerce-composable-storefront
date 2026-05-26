@@ -1,0 +1,5 @@
+# Private npm registry credentials
+.npmrc
+
+# macOS
+.DS_Store
