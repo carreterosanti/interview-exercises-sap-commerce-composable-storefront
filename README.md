@@ -22,7 +22,16 @@ npm install -g @angular/cli
 
 ## Installation
 
-> **Running `npm install` should not be necessary.** The project tracks `node_modules` in the repository to simplify distribution and ensure the environment works out of the box.
+This project tracks `node_modules` in the repository to simplify distribution — **no installation step should be required** before running the app.
+
+If you encounter missing or outdated dependencies, run `npm install` **without deleting `node_modules`**. This will update only the packages that are missing or out of date, leaving the already-tracked Spartacus dependencies untouched:
+
+```bash
+npm install
+npm run start
+```
+
+> **If `npm install` fails** (e.g. due to registry access errors for private Spartacus packages), please contact the repository provider to obtain the required `.npmrc` configuration file.
 
 ## Development server
 
