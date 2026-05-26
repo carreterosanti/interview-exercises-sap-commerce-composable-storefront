@@ -1,0 +1,14 @@
+.interview-product-badge {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.5rem;
+
+  .badge-label {
+    background-color: var(--cx-color-primary, #1573e6);
+    color: var(--cx-color-inverse, #ffffff);
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+  }
+}

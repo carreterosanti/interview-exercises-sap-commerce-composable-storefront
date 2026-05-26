@@ -1,0 +1,11 @@
+<ng-container *ngIf="product$ | async as product">
+  <div class="interview-add-to-cart">
+    <div>
+      Exercise 1: Replace 'CONFIGURAR PRODUCTO' with a new i18n translation such as
+      "interview.productSettings.label" = "CONFIGURACION DE PRODUCTO"
+    </div>
+    <button class="btn btn-primary btn-block mt-2" (click)="addToCart()">
+      {{ 'interview.productSettings.label' | cxTranslate }}
+    </button>
+  </div>
+</ng-container>

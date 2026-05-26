@@ -1,0 +1,21 @@
+@if (product(); as product) {
+  <div>Exercise 2: Display the product price and stock in the badge:</div>
+  @if (product.price) {
+    <div class="interview-product-badge">
+      <span class="badge-label">{{ product.price.formattedValue }}</span>
+    </div>
+  } @else {
+    <div class="interview-product-badge">
+      <span class="badge-label">No price</span>
+    </div>
+  }
+  @if (product.stock) {
+    <div class="interview-product-badge">
+      <span class="badge-label">{{ product.stock.stockLevel }}</span>
+    </div>
+  } @else {
+    <div class="interview-product-badge">
+      <span class="badge-label">No stock</span>
+    </div>
+  }
+}
