@@ -1,3 +1,0 @@
-@spartacus:registry=https://<YOUR_REGISTRY_URL>/
-//<YOUR_REGISTRY_URL>/:_auth=<YOUR_BASE64_TOKEN>
-always-auth=true
